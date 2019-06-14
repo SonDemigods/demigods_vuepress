@@ -47,6 +47,11 @@ module.exports = {
       ],
       '/JavaScript/': [
         '',
+        'catalogue',
+        'config',
+        'util',
+        'tool',
+        'validate',
         'ajax'
       ],
       '/About/': [
