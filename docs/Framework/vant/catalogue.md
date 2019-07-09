@@ -13,6 +13,12 @@
 源码
 ### api
 ajax
+### asset
+静态资源
+#### icon
+图标
+#### theme
+主题
 ### config
 配置引用，实际配置文件在public文件夹中
 ### lib
@@ -29,6 +35,8 @@ ajax基础封装
 基础工具函数
 #### validate.js
 验证方法
+### store
+vuex数据
 ### view
 页面
 #### home

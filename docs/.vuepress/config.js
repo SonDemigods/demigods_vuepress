@@ -16,17 +16,32 @@ module.exports = {
     sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
     lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
     // 导航
-    nav: [{
-        text: 'HTML',
-        link: '/HTML/'
-      },
+    nav: [
+      // {
+      //   text: 'HTML',
+      //   link: '/HTML/'
+      // },
+      // {
+      //   text: 'CSS',
+      //   link: '/CSS/'
+      // },
+      // {
+      //   text: 'JavaScript',
+      //   link: '/JavaScript/'
+      // },
       {
-        text: 'CSS',
-        link: '/CSS/'
-      },
-      {
-        text: 'JavaScript',
-        link: '/JavaScript/'
+        text: 'Framework',
+        link: '/Framework/',
+        items: [{
+          text: 'util',
+          link: '/Framework/util/'
+        }, {
+          text: 'iview',
+          link: '/Framework/iview/'
+        }, {
+          text: 'vant',
+          link: '/Framework/vant/'
+        }]
       },
       {
         text: 'About',
@@ -46,13 +61,28 @@ module.exports = {
         ''
       ],
       '/JavaScript/': [
+        ''
+      ],
+      // '/Framework/': [
+      //   ''
+      // ],
+      '/Framework/util/': [
         '',
-        'catalogue',
-        'config',
+        'ajax',
         'util',
         'tool',
-        'validate',
-        'ajax'
+        'validate'
+      ],
+      '/Framework/iview/': [
+        '',
+        'config',
+        'catalogue',
+        'pageRule'
+      ],
+      '/Framework/vant/': [
+        '',
+        'config',
+        'catalogue'
       ],
       '/About/': [
         ''
