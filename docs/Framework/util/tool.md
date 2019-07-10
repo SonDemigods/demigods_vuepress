@@ -17,7 +17,7 @@ import {
   getUnion,
   hasOneOf,
   oneOf
-} from '@/lib/util'
+} from '@/lib/tool'
 
 forEach(arr, fn)
 getIntersection(arr1, arr2)
@@ -37,7 +37,7 @@ objEqual|obj1,obj2|res|判断两个对象是否相等，这两个对象的值只
 import {
   hasKey,
   objEqual
-} from '@/lib/util'
+} from '@/lib/tool'
 
 hasKey(obj, key)
 objEqual(obj1, obj2)
@@ -62,7 +62,7 @@ import {
   getRelativeTime,
   date2str,
   str2date
-} from '@/lib/util'
+} from '@/lib/tool'
 
 isMillisecond(timeStamp)
 isEarly(timeStamp,currentTime)
@@ -70,4 +70,53 @@ getDate(timeStamp,startType)
 getRelativeTime(timeStamp)
 date2str(date)
 str2date(str)
+```
+
+## 数据验证方法
+名称|参数|返回值|说明
+---|---|---|---
+isStatic|value|res|检测数据是不是除了symbol外的原始数据
+isPrimitive|value|res|检测数据是不是原始数据
+isObject|value|res|判断数据是不是引用类型的数据
+isObjectLike|value|res|检查value是否是类对象
+getRawType|value|res|获取数据类型
+isEmpty|value|res|检查 value 是否为空
+
+### 实例
+```
+import {
+  isStatic,
+  isPrimitive,
+  isObject,
+  isObjectLike,
+  getRawType,
+  isEmpty
+} from '@/lib/tool'
+
+isStatic(any)
+isPrimitive(any)
+isObject(any)
+isObjectLike(any)
+getRawType(any)
+isEmpty(any)
+```
+
+## 命名转换
+名称|参数|返回值|说明
+---|---|---|---
+camelize|str|res|横线转驼峰命名
+hyphenate|str|res|驼峰命名转横线命名
+capitalize|str|res|字符串首位大写
+
+### 实例
+```
+import {
+  camelize,
+  hyphenate,
+  capitalize
+} from '@/lib/tool'
+
+camelize(str)
+hyphenate(str)
+capitalize(str)
 ```
