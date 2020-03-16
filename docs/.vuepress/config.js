@@ -50,6 +50,10 @@ module.exports = {
       {
         text: 'GitHub',
         link: 'https://github.com/SonDemigods'
+      },
+      {
+        text: '津ICP备17010288号',
+        link: 'http://www.beian.miit.gov.cn'
       }
     ],
     // 侧边栏
