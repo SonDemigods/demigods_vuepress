@@ -1,17 +1,16 @@
 # 页面编写规则说明
+
 ## 目录
-### page
-页面目录
-#### page.vue
-页面vue文件
-#### index.js
-页面导出
-#### components
-页面内组件
+```javascript
+│  page.vue		// 页面文件
+│  index.js		// 页面导出文件
+└─components	// 页面组件文件夹
+
+```
 
 ## page.vue
 
-```
+```vue
 <template>
   <div>page</div>
 </template>
@@ -37,7 +36,7 @@ export default {
 ```
 
 ## index.js
-```
+```javascript
 import page from './page.vue'
 export default page
 ```

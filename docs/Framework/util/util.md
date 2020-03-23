@@ -1,4 +1,5 @@
-# 基础工具说明
+# 基础工具说明（已废弃）
+2020年之前的框架使用该说明文档
 
 ## token方法
 名称|参数|返回值|说明
@@ -7,7 +8,7 @@ setToken|token|无|保存token到cookie
 getToken|无|token|读取cookie保存的token
 
 ### 实例
-```
+```javascript
 import {
   setToken,
   getToken
@@ -23,7 +24,7 @@ getToken()
 getParams|url|参数对象|解析url提取参数为key:value形式
 
 ### 实例
-```
+```javascript
 import {
   getParams
 } from '@/lib/util'
@@ -38,7 +39,7 @@ localSave|key,value|无|保存localStorage数据
 localRead|key|value|返回localStorage数据
 
 ### 实例
-```
+```javascript
 import {
   localSave,
   localRead

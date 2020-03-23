@@ -1,4 +1,5 @@
-# 工具说明
+# 工具说明（已废弃）
+2020年之前的框架使用该说明文档
 
 ## 数组方法
 名称|参数|返回值|说明
@@ -10,7 +11,7 @@ hasOneOf|targetarr,arr|res|判断要查询的数组是否至少有一个元素�
 oneOf|value,validList|res|判断要查询的字符串或数值是否包含验证的列表内
 
 ### 实例
-```
+```javascript
 import {
   forEach,
   getIntersection,
@@ -33,7 +34,7 @@ hasKey|obj,key|res|判断一个对象是否存在key，如果传入第二个参�
 objEqual|obj1,obj2|res|判断两个对象是否相等，这两个对象的值只能是数字或字符串
 
 ### 实例
-```
+```javascript
 import {
   hasKey,
   objEqual
@@ -54,7 +55,7 @@ date2str|date|res|时间对象转字符串
 str2date|str|res|字符串转时间对象
 
 ### 实例
-```
+```javascript
 import {
   isMillisecond,
   isEarly,
@@ -83,7 +84,7 @@ getRawType|value|res|获取数据类型
 isEmpty|value|res|检查 value 是否为空
 
 ### 实例
-```
+```javascript
 import {
   isStatic,
   isPrimitive,
@@ -109,7 +110,7 @@ hyphenate|str|res|驼峰命名转横线命名
 capitalize|str|res|字符串首位大写
 
 ### 实例
-```
+```javascript
 import {
   camelize,
   hyphenate,

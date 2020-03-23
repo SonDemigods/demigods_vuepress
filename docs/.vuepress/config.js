@@ -33,11 +33,20 @@ module.exports = {
         text: '框架',
         link: '/Framework/',
         items: [{
+          text: 'common',
+          link: '/Framework/common/'
+        }, {
+          text: 'tools',
+          link: '/Framework/tools/'
+        }, {
           text: 'util',
           link: '/Framework/util/'
         }, {
           text: 'iview',
           link: '/Framework/iview/'
+        }, {
+          text: 'element',
+          link: '/Framework/element/'
         }, {
           text: 'vant',
           link: '/Framework/vant/'
@@ -70,18 +79,36 @@ module.exports = {
       // '/Framework/': [
       //   ''
       // ],
-      '/Framework/util/': [
+      '/Framework/common/': [
         '',
         'ajax',
-        'util',
-        'tool',
+        'pageRule',
         'validate'
+      ],
+      '/Framework/tools/': [
+        '',
+        'environment',
+        'data',
+        'string',
+        'object',
+        'array',
+        'date',
+        'function',
+        'localStorage'
+      ],
+      '/Framework/util/': [
+        '',
+        'util',
+        'tool'
       ],
       '/Framework/iview/': [
         '',
         'config',
-        'catalogue',
-        'pageRule'
+        'catalogue'
+      ],
+      '/Framework/element/': [
+        '',
+        'catalogue'
       ],
       '/Framework/vant/': [
         '',
