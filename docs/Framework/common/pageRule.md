@@ -43,3 +43,7 @@ export default page
 
 ## components
 根据页面逻辑自行处理
+
+## 参考资料
+
+[vue官方文档](https://cn.vuejs.org/v2/guide/)
