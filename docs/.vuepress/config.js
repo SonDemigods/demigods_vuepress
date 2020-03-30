@@ -83,7 +83,10 @@ module.exports = {
         '',
         'ajax',
         'pageRule',
-        'validate'
+        'pageDemo',
+        'validate',
+        'router',
+        'vuex'
       ],
       '/Framework/tools/': [
         '',
