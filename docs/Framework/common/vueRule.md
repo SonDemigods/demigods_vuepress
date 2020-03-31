@@ -176,7 +176,7 @@ v-text
 
 ```javascript
 // 名称
-const name = ‘abc’
+const name = 'abc'
 ```
 
 ### 多行注释

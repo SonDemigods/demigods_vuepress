@@ -13,7 +13,7 @@ Vue.prototype.$api = api
 ### get
 参数 | 类型 | 默认值 | 说明
 ---|---|---|---
-url | string | ‘’ | 请求地址
+url | string | '' | 请求地址
 
 ```javascript
 import api from '@/api'
@@ -28,7 +28,7 @@ api.get('url').then( res => {
 ### post
 参数 | 类型 | 默认值 | 说明
 ---|---|---|---
-url | string | ‘’ | 请求地址
+url | string | '' | 请求地址
 data | object | {} | 请求参数
 type| Boolean | true |参数类型 true:json;false:formData; 
 
@@ -45,7 +45,7 @@ api.post('url', data, type).then( res => {
 ### put
 参数 | 类型 | 默认值 | 说明
 ---|---|---|---
-url | string | ‘’ | 请求地址
+url | string | '' | 请求地址
 data | object | {} | 请求参数
 type| Boolean | true |参数类型 true:json;false:formData; 
 
@@ -62,7 +62,7 @@ api.put('url', data, type).then( res => {
 ### delete
 参数 | 类型 | 默认值 | 说明
 ---|---|---|---
-url | string | ‘’ | 请求地址
+url | string | '' | 请求地址
 data | object | {} | 请求参数
 type| Boolean | true |参数类型 true:json;false:formData; 
 
