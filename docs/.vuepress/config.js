@@ -86,7 +86,8 @@ module.exports = {
         'pageDemo',
         'validate',
         'router',
-        'vuex'
+        'vuex',
+        'vueRule'
       ],
       '/Framework/tools/': [
         '',
