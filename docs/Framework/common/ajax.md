@@ -5,20 +5,20 @@
 
 ### 绑定原型链
 ```javascript
-import http from '@/http'
+import api from '@/api'
 
-Vue.prototype.$http = http
+Vue.prototype.$api = api
 ```
 
 ### get
-参数 | 类型 | 说明
----|---|---
-url | string | 请求地址
+参数 | 类型 | 默认值 | 说明
+---|---|---|---
+url | string | ‘’ | 请求地址
 
 ```javascript
-import http from '@/http'
+import api from '@/api'
 
-http.get('url').then( res => {
+api.get('url').then( res => {
     console.log(res)
 }).cath( err => {
     console.log(err)
@@ -26,15 +26,16 @@ http.get('url').then( res => {
 ```
 
 ### post
-参数 | 类型 | 说明
----|---|---
-url | string | 请求地址
-data | object | 请求参数
+参数 | 类型 | 默认值 | 说明
+---|---|---|---
+url | string | ‘’ | 请求地址
+data | object | {} | 请求参数
+type| Boolean | true |参数类型 true:json;false:formData; 
 
 ```javascript
-import http from '@/http'
+import api from '@/api'
 
-http.post('url', data).then( res => {
+api.post('url', data, type).then( res => {
     console.log(res)
 }).cath( err => {
     console.log(err)
@@ -42,15 +43,16 @@ http.post('url', data).then( res => {
 ```
 
 ### put
-参数 | 类型 | 说明
----|---|---
-url | string | 请求地址
-data | object | 请求参数
+参数 | 类型 | 默认值 | 说明
+---|---|---|---
+url | string | ‘’ | 请求地址
+data | object | {} | 请求参数
+type| Boolean | true |参数类型 true:json;false:formData; 
 
 ```javascript
-import http from '@/http'
+import api from '@/api'
 
-http.put('url', data).then( res => {
+api.put('url', data, type).then( res => {
     console.log(res)
 }).cath( err => {
     console.log(err)
@@ -58,15 +60,16 @@ http.put('url', data).then( res => {
 ```
 
 ### delete
-参数 | 类型 | 说明
----|---|---
-url | string | 请求地址
-data | object | 请求参数
+参数 | 类型 | 默认值 | 说明
+---|---|---|---
+url | string | ‘’ | 请求地址
+data | object | {} | 请求参数
+type| Boolean | true |参数类型 true:json;false:formData; 
 
 ```javascript
-import http from '@/http'
+import api from '@/api'
 
-http.delete('url', data).then( res => {
+api.delete('url', data, type).then( res => {
     console.log(res)
 }).cath( err => {
     console.log(err)
