@@ -1,5 +1,15 @@
-# router
-路由相关说明
+---
+title: vue-router配置说明
+date: 2019-06-14
+categories:
+ - 框架
+tags:
+ - vue
+ - vue-router
+---
+
+# vue-router
+路由配置说明
 
 ## 目录
 

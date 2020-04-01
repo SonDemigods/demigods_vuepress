@@ -1,3 +1,14 @@
+---
+title: 接口调用实例
+date: 2020-03-30
+categories:
+ - 框架
+tags:
+ - vue
+ - ajax
+ - axios
+---
+
 # 接口调用实例
 
 ## 目录

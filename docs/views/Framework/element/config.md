@@ -1,3 +1,14 @@
+---
+title: element配置说明
+date: 2020-03-23
+categories:
+ - 框架
+tags:
+ - vue
+ - element
+ - config
+---
+
 # 配置说明
 
 ## 配置项

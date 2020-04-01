@@ -1,4 +1,14 @@
-# vuex
+---
+title: vuex文件结构说明
+date: 2020-03-24
+categories:
+ - 框架
+tags:
+ - vue
+ - vuex
+---
+
+# vuex文件结构
 vuex的使用说明
 
 ## 目录

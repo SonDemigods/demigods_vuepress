@@ -1,4 +1,14 @@
-# 页面结构说明
+---
+title: vue文件结构规范
+date: 2019-07-10
+categories:
+ - 框架
+tags:
+ - vue
+ - 规范
+---
+
+# 页面结构规范
 
 ## 目录
 ```javascript

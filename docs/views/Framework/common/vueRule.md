@@ -1,3 +1,13 @@
+---
+title: vue开发规范
+date: 2020-03-31
+categories:
+ - 规范
+tags:
+ - vue
+ - 规范
+---
+
 # vue开发规范
 
 ## 规范目的
@@ -118,7 +128,7 @@ filter
 watch
 ```
 
-详见 [pageRule.md](./pageRule.md)
+详见 [vue文件结构规范](./pageRule.md)
 
 ### 属性结构规范
 

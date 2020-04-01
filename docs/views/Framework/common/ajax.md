@@ -1,3 +1,13 @@
+---
+title: ajax使用说明
+date: 2019-06-14
+categories:
+ - 框架
+tags:
+ - ajax
+ - axios
+---
+
 # ajax说明
 
 ## axios封装

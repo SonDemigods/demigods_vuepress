@@ -1,3 +1,14 @@
+---
+title: vant配置说明
+date: 2019-07-09
+categories:
+ - 框架
+tags:
+ - vue
+ - vant
+ - config
+---
+
 # 配置说明
 
 ## 配置项

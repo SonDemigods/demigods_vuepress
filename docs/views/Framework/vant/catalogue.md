@@ -1,3 +1,13 @@
+---
+title: vant目录说明
+date: 2019-07-09
+categories:
+ - 框架
+tags:
+ - vue
+ - vant
+ - 目录
+---
 # 目录结构
 
 ```javascript
