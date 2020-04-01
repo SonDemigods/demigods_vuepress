@@ -2,6 +2,7 @@ module.exports = {
   'title': '陨落的半神',
   'description': '剥开情感的外衣，找寻技术的真谛',
   'dest': 'public',
+  // 'base': '/demigods_blog/',
   'head': [
     [
       'link',
@@ -66,7 +67,7 @@ module.exports = {
     'search': true,
     'searchMaxSuggestions': 10,
     'sidebar': 'auto',
-    'lastUpdated': 'Last Updated',
+    'lastUpdated': '更新时间',
     'author': '陨落的半神',
     'authorAvatar': '/avatar.jpg',
     // 备案配置
