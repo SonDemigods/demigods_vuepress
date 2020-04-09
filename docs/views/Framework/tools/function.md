@@ -1,3 +1,13 @@
+---
+title: 函数方法说明
+date: 2019-06-26
+categories:
+ - 工具
+tags:
+ - javascript
+ - tool
+ - function
+---
 # 事件
 事件相关方法
 

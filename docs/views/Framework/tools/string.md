@@ -1,3 +1,13 @@
+---
+title: 字符串方法说明
+date: 2019-06-26
+categories:
+ - 工具
+tags:
+ - javascript
+ - tool
+ - string
+---
 # 字符串
 字符串相关方法
 

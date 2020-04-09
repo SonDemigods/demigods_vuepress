@@ -1,3 +1,13 @@
+---
+title: 对象方法说明
+date: 2019-06-26
+categories:
+ - 工具
+tags:
+ - javascript
+ - tool
+ - object
+---
 # 对象
 对象相关方法
 

@@ -1,3 +1,13 @@
+---
+title: 本地存储方法说明
+date: 2019-06-26
+categories:
+ - 工具
+tags:
+ - javascript
+ - tool
+ - storage
+---
 # 本地存储
 本地存储相关方法
 

@@ -103,8 +103,6 @@ import page from './page.vue'
 export default page
 ```
 
-## components
-根据页面逻辑自行处理
 
 ## 参考资料
 

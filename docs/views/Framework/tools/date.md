@@ -1,3 +1,13 @@
+---
+title: 时间方法说明
+date: 2019-06-26
+categories:
+ - 工具
+tags:
+ - javascript
+ - tool
+ - date
+---
 # 时间
 时间相关方法
 

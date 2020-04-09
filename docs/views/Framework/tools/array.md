@@ -1,3 +1,13 @@
+---
+title: 数组方法说明
+date: 2019-06-26
+categories:
+ - 工具
+tags:
+ - javascript
+ - tool
+ - array
+---
 # 数组
 数组相关方法
 

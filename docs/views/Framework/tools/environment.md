@@ -1,3 +1,13 @@
+---
+title: 环境方法说明
+date: 2019-06-26
+categories:
+ - 工具
+tags:
+ - javascript
+ - tool
+ - 环境
+---
 # 环境
 环境相关方法
 

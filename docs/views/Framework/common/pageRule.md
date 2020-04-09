@@ -2,7 +2,7 @@
 title: vue文件结构规范
 date: 2019-07-10
 categories:
- - 框架
+ - 规范
 tags:
  - vue
  - 规范

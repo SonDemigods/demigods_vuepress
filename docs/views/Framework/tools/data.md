@@ -1,3 +1,13 @@
+---
+title: 数据方法说明
+date: 2019-06-26
+categories:
+ - 工具
+tags:
+ - javascript
+ - tool
+ - data
+---
 # 数据类型
 数据类型相关方法
 
