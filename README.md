@@ -1,6 +1,11 @@
-# vuepress-theme-reco-demo
+# 个人博客
 
-Blog demo for vuepress-theme-reco
+## 线上地址
+
+[github.io](https://sondemigods.github.io/demigods_vuepress/)
+[demigods.top](http://www.demigods.top/)
+
+## 脚本
 
 ```bash
 # 编译
