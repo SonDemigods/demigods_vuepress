@@ -1,4 +1,5 @@
 ---
+sticky: 1
 title: vue开发规范
 date: 2020-03-31
 categories:
@@ -56,10 +57,9 @@ tags:
 名称 | 说明 | 名称 | 说明 | 名称 | 说明 | 名称 | 说明
 --- | --- | --- | --- | --- | --- | --- | ---
 get | 获取 | set | 设置 | add | 增加 | remove | 删除
-create | 创建 | destory | 移除 | start | 启动 | stop | 停止
+create | 创建 | destory | 销毁 | start | 启动 | stop | 停止
 open | 打开 | close | 关闭 | read | 读取 | write | 写入
-load | 载入 | save | 保存 | create | 创建 | destroy | 销毁
-begin | 开始 | end | 结束 | backup | 备份 | restore | 恢复
+load | 载入 | save | 保存 | backup | 备份 | restore | 恢复
 import | 导入 | export | 导出 | split | 分割 | merge | 合并
 inject | 注入 | extract | 提取 | attach | 附着 | detach | 脱离
 bind | 绑定 | separate | 分离 | view | 查看 | browse | 浏览
@@ -79,7 +79,7 @@ download | 下载 | upload | 上传 | refresh | 刷新 | synchronize | 同步
 update | 更新 | revert | 复原 | lock | 锁定 | unlock | 解锁
 check out | 签出 | check in | 签入 | submit | 提交 | commit | 交付
 push | 推 | pull | 拉 | expand | 展开 | collapse | 折叠
-begin | 起始 | end | 结束 | start | 开始 | finish | 完成
+begin | 开始 | end | 结束 | start | 开始 | finish | 完成
 enter | 进入 | exit | 退出 | abort | 放弃 | quit | 离开
 obsolete | 废弃 | depreciate | 废旧 | collect | 收集 | aggregate | 聚集
 

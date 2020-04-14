@@ -37,6 +37,20 @@ import tools from '@/tools'
 tools.off()
 ```
 
+## throttle
+节流
+
+名称|类型|默认值|必须|说明
+---|---|---|---|---
+fn|Function|function () {}|true|需要节流的函数
+wait|Number|1000|true|节流的时间,毫秒
+
+```javascript
+import tools from '@/tools'
+
+tools.throttle(fn, wait)
+```
+
 ## debounce
 防抖
 
@@ -49,4 +63,19 @@ delay|Number|1000|true|防抖的时间,毫秒
 import tools from '@/tools'
 
 tools.debounce(fn, delay)
+```
+
+## resultObj
+验证结果包装
+
+名称|类型|默认值|必须|说明
+---|---|---|---|---
+parameters|Object|{}|true|验证传入参数
+result|Boolean|false|true|验证结果
+message|String|''|true|验证结果说明
+
+```javascript
+import tools from '@/tools'
+
+tools.resultObj(parameters, result, message)
 ```

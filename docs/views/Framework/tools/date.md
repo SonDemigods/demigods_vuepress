@@ -42,12 +42,12 @@ tools.str2date(str)
 
 名称|类型|默认值|必须|说明
 ---|---|---|---|---
-str|String/Number|''|false|时间字符串或时间戳
+time|String/Number/Date|''|false|时间、时间字符串或时间戳
 
 ```javascript
 import tools from '@/tools'
 
-tools.getTimeStamp(str)
+tools.getTimeStamp(time)
 ```
 
 ## getRelativeTime
