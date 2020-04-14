@@ -3,7 +3,7 @@ module.exports = {
   'description': '剥开情感的外衣，找寻技术的真谛',
   'dest': 'public',
   // 发布到github.io需要添加base
-  // 'base': '/demigods_blog/',
+  'base': '/demigods_vuepress/',
   'head': [
     [
       'link',
