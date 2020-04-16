@@ -13,6 +13,17 @@ tags:
 * 同级文件名后缀为`.validation.js`的文件将自动引入入口文件中
 * 验证文件需要导出验证方法
 
+## 验证结果
+
+验证结果统一返回固定格式数据
+```javascript
+{
+  parameters: {},				// 验证方法传入的参数，用于排查错误
+  result:false,					// 验证结果，通过为true，不通过为false
+  message: ''					// 验证结果说明，包含未通过的原因
+}
+```
+
 ## 目录
 
 ```javascript

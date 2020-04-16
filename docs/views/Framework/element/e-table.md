@@ -23,17 +23,14 @@ tags:
 -|-|-|-
 columns|表格列配置，详见原组件`Table-column Attributes`说明|Array|[]
 
-### 修改的属性
+## columns
+该项对应原组件`Table-column Attributes`
+
+### 新增的属性
 
 属性|说明|类型|默认值
 -|-|-|-
--|-|-|-
-
-### 移除的属性
-
-属性|说明|类型|默认值
--|-|-|-
--|-|-|-
+slotName|自定义插槽的name|String|''
 
 ## 参考资料
 element-ui中的[el-tablle](https://element.eleme.cn/#/zh-CN/component/table)组件相关说明

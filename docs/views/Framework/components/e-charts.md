@@ -38,16 +38,26 @@ tags:
              refs="cRadar"
              :text="text"
              :subText="subText"></e-radar>
-    <e-map :visualMap="visualMap"
-           :mapData="mapData"
-           refs="cMap"
-           :text="text"
-           :subText="subText"></e-map>
+    <div style="height:800px;">
+      <e-map :visualMap="visualMap"
+             :mapData="mapData"
+             refs="cMap"
+             :text="text"
+             :subText="subText"></e-map>
+    </div>
+    <div style="height:800px;">
+      <e-graph :seriesLinks="graphData.links"
+               :seriesData="graphData.data"
+               :categories="graphData.categories"
+               refs="cGraph"
+               :text="text"
+               :subText="subText"></e-graph>
+    </div>
   </div>
 </template>
 
 <script>
-import { Ebar, Eline, Epie, Eradar, Emap } from '@/components/e-charts'
+import { Ebar, Eline, Epie, Eradar, Emap, Egraph } from '@/components/e-charts'
 export default {
   name: 'charts',
   components: {
@@ -55,7 +65,8 @@ export default {
     'e-line': Eline,
     'e-pie': Epie,
     'e-radar': Eradar,
-    'e-map': Emap
+    'e-map': Emap,
+    'e-graph': Egraph
   },
   props: {},
   data () {
@@ -108,7 +119,9 @@ export default {
         { name: '西青区', value: 45180.97 },
         { name: '津南区', value: 55204.26 },
         { name: '静海区', value: 21900.9 },
-      ]
+      ],
+      // 关系图数据
+      graphData
     }
   },
   watch: {},
@@ -176,6 +189,16 @@ visualMap|热力指数|Object|{}
 mapData|数据|Array|[]
 text|标题|String|''
 subText|小标题|String|''
+
+## 关系图
+
+### props
+
+属性|说明|类型|默认值
+---|---|---|---|---
+seriesLinks|关系数据|Array|[]
+seriesData|对象数据|Array|[]
+categories|类目数据|Array|[]
 
 ## 原生图表
 
