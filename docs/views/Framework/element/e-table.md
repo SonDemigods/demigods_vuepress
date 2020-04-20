@@ -22,6 +22,10 @@ tags:
 属性|说明|类型|默认值
 -|-|-|-
 columns|表格列配置，详见原组件`Table-column Attributes`说明|Array|[]
+page-show|是否显示分页|Boolean|true
+total|总数|Number|0
+current|当前页|Number|1
+page-option|分页组件配置，详见`e-page`组件|Object|{}
 
 ## columns
 该项对应原组件`Table-column Attributes`
