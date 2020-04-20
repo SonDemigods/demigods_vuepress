@@ -62,3 +62,16 @@ import tools from '@/tools'
 
 tools.getRelativeTime(timeStamp)
 ```
+
+## isLeapYear
+判断年份是否为闰年
+
+名称|类型|默认值|必须|说明
+---|---|---|---|---
+year|Number|0|true|检测的年份
+
+```javascript
+import tools from '@/tools'
+
+tools.isLeapYear(year)
+```
