@@ -3,7 +3,7 @@ title: 数字方法说明
 date: 2020-04-17
 author: 赵致喜
 categories:
- - 格式化
+ - 工具
 tags:
  - javascript
  - tool
