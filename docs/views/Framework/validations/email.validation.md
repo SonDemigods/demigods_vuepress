@@ -8,9 +8,6 @@ tags:
  - validation
  - email
 ---
-# 邮箱验证
-邮箱验证方法
-
 ## emailValidation
 验证字符串是否符合邮箱规则
 

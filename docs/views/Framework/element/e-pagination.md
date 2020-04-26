@@ -9,7 +9,7 @@ tags:
  - component
 ---
 
-# e-pagination
+## e-pagination
 本组件为`element-ui`中`el-pagination`组件的二次封装，简化传递参数。
 部分参数修改了默认值。
 该组件已全局注册，直接使用即可。

@@ -8,9 +8,6 @@ tags:
  - vuex
 ---
 
-# vuex文件结构
-vuex的使用说明
-
 ## 目录
 ```javascript
 │  index.js						// vuex主文件

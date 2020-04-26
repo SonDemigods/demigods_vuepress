@@ -8,9 +8,6 @@ tags:
  - validation
  - date
 ---
-# 时间验证
-时间相关验证方法
-
 ## dateCompare
 被检测时间与当前时间比较
 

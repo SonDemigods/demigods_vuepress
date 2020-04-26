@@ -8,13 +8,14 @@ tags:
  - vant
  - 目录
 ---
-# 目录结构
+## 目录结构
 
 ```javascript
 │  .gitignore						// git忽略配置
 │  babel.config.js					// babel配置
 │  LICENSE							// 开源协议
-│  package.json						// webpack配置
+│  package-lock.json				// 本地包锁定
+│  package.json						// node项目配置
 │  README.md						// 自述文档
 │  vue.config.js					// vue 配置
 │  

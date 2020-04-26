@@ -8,9 +8,6 @@ tags:
  - tool
  - string
 ---
-# 字符串
-字符串相关方法
-
 ## camelize
 横线转驼峰命名
 

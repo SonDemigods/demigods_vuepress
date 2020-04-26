@@ -9,10 +9,6 @@ tags:
  - validation
  - decimal
 ---
-# 浮点小数位数验证方法说明
-
-浮点小数位数验证
-
 ## decimalValidation
 
 验证浮点小数位数是否符合

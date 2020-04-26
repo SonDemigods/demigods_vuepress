@@ -9,10 +9,6 @@ tags:
  - validation
  - coordinate
 ---
-# 坐标验证方法说明
-
-坐标验证
-
 ## coordinateValidation
 
 验证坐标在有效范围内

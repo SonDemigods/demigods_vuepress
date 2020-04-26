@@ -7,7 +7,7 @@ tags:
  - javascript
  - component
 ---
-# components
+## components
 
 组件说明及实例,
 * vue文件遵循文件结构规范[vue文件结构规范](../common/pageRule.md)

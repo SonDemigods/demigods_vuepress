@@ -8,9 +8,6 @@ tags:
  - vue-router
 ---
 
-# vue-router
-路由配置说明
-
 ## 目录
 
 ```javascript

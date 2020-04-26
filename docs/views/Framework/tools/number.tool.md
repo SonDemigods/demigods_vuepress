@@ -1,5 +1,5 @@
 ---
-title: 数字格式化方法说明
+title: 数字方法说明
 date: 2020-04-17
 author: 赵致喜
 categories:
@@ -9,10 +9,6 @@ tags:
  - tool
  - number
 ---
-# 数字格式化方法说明
-
-数字格式化方法
-
 ## integer
 
 数字取整数，直接舍去小数位。

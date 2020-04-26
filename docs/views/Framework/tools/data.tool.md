@@ -8,9 +8,6 @@ tags:
  - tool
  - data
 ---
-# 数据类型
-数据类型相关方法
-
 ## isPrimitive
 检测数据是不是原始数据类型
 

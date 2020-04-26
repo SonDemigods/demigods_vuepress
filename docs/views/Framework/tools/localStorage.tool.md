@@ -8,9 +8,6 @@ tags:
  - tool
  - storage
 ---
-# 本地存储
-本地存储相关方法
-
 ## localSave
 在localStorage存储数据
 

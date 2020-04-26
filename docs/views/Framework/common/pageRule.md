@@ -8,8 +8,6 @@ tags:
  - 规范
 ---
 
-# 页面结构规范
-
 ## 目录
 ```javascript
 │  page.vue		// 页面文件

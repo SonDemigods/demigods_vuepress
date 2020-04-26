@@ -9,7 +9,7 @@ tags:
  - component
 ---
 
-# e-table
+## e-table
 本组件为`element-ui`中`el-table`组件的二次封装，简化传递参数；列数据和表格数据单独传递，减少插槽的使用。
 该组件已全局注册，直接使用即可。
 该文档只说明与原`el-table`组件的区别和新增项。

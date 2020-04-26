@@ -9,10 +9,6 @@ tags:
  - validation
  - dataType
 ---
-# 数据类型验证方法说明
-
-数据类型验证
-
 ## dataTypeValidation
 
 全数据类型验证

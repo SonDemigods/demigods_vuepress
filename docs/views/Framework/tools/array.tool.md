@@ -8,9 +8,6 @@ tags:
  - tool
  - array
 ---
-# 数组
-数组相关方法
-
 ## forEach
 循环数组并执行方法
 

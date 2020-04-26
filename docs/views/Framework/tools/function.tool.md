@@ -8,9 +8,6 @@ tags:
  - tool
  - function
 ---
-# 事件
-事件相关方法
-
 ## on
 绑定事件
 

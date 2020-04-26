@@ -8,8 +8,6 @@ tags:
  - axios
 ---
 
-# ajax说明
-
 ## axios封装
 使用class形式封装，支持get、post、put、delete
 

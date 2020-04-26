@@ -9,7 +9,7 @@ tags:
  - component
 ---
 
-# e-charts
+## e-charts
 本组件为`Echarts`及`vue-echarts`组件的二次封装，简化传递参数。
 封装部分基础图表类型，分别为柱状图、饼图、折线图、雷达图、天津地图。
 覆盖不到的类型使用`e-chart`组件，支持`Echarts`全部配置。

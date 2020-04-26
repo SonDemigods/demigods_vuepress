@@ -9,8 +9,6 @@ tags:
  - axios
 ---
 
-# 接口调用实例
-
 ## 目录
 ```javascript
 │  page.vue		// 页面文件

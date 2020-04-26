@@ -9,10 +9,6 @@ tags:
  - validation
  - length
 ---
-# 长度验证方法说明
-
-长度验证
-
 ## dataLengthValidation
 
 全数据类型长度验证

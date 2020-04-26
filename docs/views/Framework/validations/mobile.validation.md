@@ -9,10 +9,6 @@ tags:
  - validation
  - mobile
 ---
-# 手机号验证方法说明
-
-手机号验证
-
 ## mobileLengthValidation
 
 验证是否为正确手机号
