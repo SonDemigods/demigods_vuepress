@@ -9,7 +9,7 @@ tags:
  - 目录
 ---
 
-# 目录结构
+## 目录结构
 
 ```javascript
 │  .browserslistrc					// 浏览器兼容配置
@@ -17,8 +17,8 @@ tags:
 │  .gitignore						// git忽略配置
 │  babel.config.js					// babel配置
 │  jsconfig.json					// js配置
-│  package-lock.json				// webpack锁定
-│  package.json						// webpack配置
+│  package-lock.json				// 本地包锁定
+│  package.json						// node项目配置
 │  README.md						// 自述文档
 │  
 ├─public							// 打包资源

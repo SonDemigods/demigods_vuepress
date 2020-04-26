@@ -7,7 +7,7 @@ tags:
  - javascript
  - validation
 ---
-# validation
+## validation
 
 验证说明及实例,
 * 同级文件名后缀为`.validation.js`的文件将自动引入入口文件中

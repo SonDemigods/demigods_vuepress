@@ -9,7 +9,7 @@ tags:
  - 目录
 ---
 
-# 目录结构
+## 目录结构
 
 ```javascript
 │  .babelrc							// babel配置
@@ -21,8 +21,8 @@ tags:
 │  cypress.json						// 集成测试配置
 │  jsconfig.json					// js配置
 │  LICENSE							// 开源协议
-│  package-lock.json				// webpack锁定
-│  package.json						// webpack配置
+│  package-lock.json				// 本地包锁定
+│  package.json						// node项目配置
 │  README.md						// 自述文档
 │  vue.config.js					// vue配置
 │
