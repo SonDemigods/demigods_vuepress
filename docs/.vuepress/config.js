@@ -3,7 +3,7 @@ module.exports = {
   'description': '剥开情感的外衣，找寻技术的真谛',
   'dest': 'public',
   // 发布到github.io需要添加base
-  'base': '/demigods_vuepress/',
+  // 'base': '/demigods_vuepress/',
   'head': [
     [
       'link',
@@ -27,6 +27,15 @@ module.exports = {
         'text': '首页',
         'link': '/',
         'icon': 'reco-home'
+      },
+      {
+        'text': '教程',
+        'link': '/tags/教程/',
+        'icon': 'reco-document',
+        'items': [{
+          'text': 'Vue',
+          'link': '/categories/vue教程/'
+        }]
       },
       {
         'text': '时间线',
@@ -121,6 +130,18 @@ module.exports = {
     }],
     // 平滑滚动
     ['vuepress-plugin-smooth-scroll'],
+    // 更新时间
+    ['@vuepress/last-updated', {
+      transformer: (timestamp) => {
+        const moment = require('moment')
+        moment.locale('zh-CN')
+        return moment(timestamp).format('llll')
+      }
+    }],
+    // 图片放大
+    ['@vuepress/medium-zoom', {
+      selector: '.theme-reco-content :not(a) > img'
+    }],
     // 加载进度条
     ['@vuepress/nprogress'],
     // 阅读进度条
