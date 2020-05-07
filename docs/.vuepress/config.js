@@ -100,32 +100,32 @@ module.exports = {
       'audios': [{
         'name': 'Natural Grace',
         'artist': 'Dan Gibson / John Herberman',
-        'url': 'https://m801.music.126.net/20200401140539/d3372a6f959698770d17fd5ea4df086c/jdyyaac/5458/055c/005a/c273dcddc9260bdf43477011a3464ce7.m4a',
-        'cover': 'https://p1.music.126.net/HxhkHA6NWjrXASgmXiNXRw==/1407374891536105.jpg'
+        'url': '/bgm/01.mp3',
+        'cover': '/bgm/01.jpg'
       },
       {
         'name': '里の秋',
         'artist': 'さだまさし',
-        'url': 'https://m701.music.126.net/20200401134813/f51e86dd8a1d14ddb3f59991b00bfda1/jdyyaac/515f/075e/0159/f5ce2f624b0431f5b5a6639588b95112.m4a',
-        'cover': 'https://p1.music.126.net/_Q10akDglE0wNV4tbV_aEA==/2480498232287561.jpg'
+        'url': '/bgm/02.mp3',
+        'cover': '/bgm/02.jpg'
       },
       {
         'name': 'Braveheart Theme',
         'artist': 'William Jackson',
-        'url': 'https://m801.music.126.net/20200401140640/325d1160051e6c7873407121eb0dc1c0/jdyyaac/050f/0352/040c/2e6a6fabf448ed9f50bd3f2f491e6dc6.m4a',
-        'cover': 'https://p1.music.126.net/6P2498qDeCRFjBllej4AfQ==/829031767395984.jpg'
+        'url': '/bgm/03.mp3',
+        'cover': '/bgm/03.jpg'
       },
       {
         'name': 'Game of Thrones Orchestra',
         'artist': '孟晓洁Jae',
-        'url': 'https://m10.music.126.net/20200401133033/3fee6107d08b8160a842070e1cbfecce/ymusic/545f/555c/565a/c5df2ddae0b61887ad09a042b8ac6692.mp3',
-        'cover': 'https://p1.music.126.net/IYq4E6kYALau2Dy8F63dTg==/109951164001378057.jpg'
+        'url': '/bgm/04.mp3',
+        'cover': '/bgm/04.jpg'
       },
       {
         'name': 'China-P',
         'artist': '徐梦圆',
-        'url': 'http://m701.music.126.net/20200401131414/d3f6e24bc3444fdc22a1cd3487d52b26/jdyyaac/5658/5408/030b/a218dd3791cb8a16a6044a1712ddceb4.m4a',
-        'cover': 'http://p1.music.126.net/qxhi4CQFa1iXeeHhEaOBNg==/17961621951438972.jpg'
+        'url': '/bgm/05.mp3',
+        'cover': '/bgm/05.jpg'
       }]
     }],
     // 平滑滚动
@@ -144,6 +144,14 @@ module.exports = {
     }],
     // 加载进度条
     ['@vuepress/nprogress'],
+    // 新内容刷新
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: {
+        message: "发现新内容可用.",
+        buttonText: "刷新"
+      }
+    }],
     // 阅读进度条
     ['reading-progress']
   ]
