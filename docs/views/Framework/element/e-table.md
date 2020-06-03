@@ -27,6 +27,9 @@ total|总数|Number|0
 current|当前页|Number|1
 page-option|分页组件配置，详见`e-page`组件|Object|{}
 
+## events
+该项对应原组件`Table Events`
+
 ### 新增的方法
 
 名称|说明|参数
