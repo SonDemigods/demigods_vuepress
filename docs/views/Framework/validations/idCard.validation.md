@@ -11,6 +11,20 @@ tags:
 ## 身份证验证
 身份证验证方法，该系列方法根据验证强度会返回`other`字段，包含`地区编码`、`地区名称`、`出生日期`、`年龄`、`性别`。
 
+## idCardCheck
+身份证模糊验证，在性能要求较低且不知道字符串长度的情况下使用。
+
+名称|类型|默认值|必须|说明
+---|---|---|---|---
+idcard|String|''|true|被检测的字符串
+type|Number|0|true|验证的类型,0:简单;1:严格;
+
+```javascript
+import validations from '@/validations'
+
+validations.idCardCheck(idcard, type)
+```
+
 ## idCardLength
 验证字符串是否符合身份证长度
 
