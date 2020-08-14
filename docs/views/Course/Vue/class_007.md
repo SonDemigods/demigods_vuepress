@@ -149,3 +149,13 @@ export default {
 }
 </script>
 ```
+
+### 注册方式
+
+全局注册
+
+```javascript
+import Vue from 'vue'
+import name from '@/components/name'
+Vue.component('name', name)
+```

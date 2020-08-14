@@ -92,6 +92,14 @@ obsolete | 废弃 | depreciate | 废旧 | collect | 收集 | aggregate | 聚集
 * 小驼峰命名
 * 小写单词+连字符的方式使用
 
+### 路由文件命名
+
+* xxx.router.js
+
+### 混入文件命名
+
+* xxx.mixins.js
+
 ### 其他
 
 * 作用域较小时变量可以适当简写
