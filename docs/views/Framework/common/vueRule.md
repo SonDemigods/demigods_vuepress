@@ -1,5 +1,5 @@
 ---
-sticky: 1
+sticky: 2
 title: vue开发规范
 date: 2020-03-31
 categories:
