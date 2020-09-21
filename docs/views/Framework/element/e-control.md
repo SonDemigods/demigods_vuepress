@@ -25,6 +25,7 @@ btns|需要渲染的按钮数组，详见`e-operation`组件说明|Array|[]
 -|-|-
 on-search|点击查询按钮时触发的方法|表单数据
 on-refresh|点击重置按钮时触发的方法|表单数据
+change-height|点击展开或关闭按钮时触发的方法|表单占用的高度
 on-insert|点击新增按钮时触发的方法|无
 on-update|点击编辑按钮时触发的方法|无
 on-delete|点击删除按钮时触发的方法|无

@@ -24,6 +24,7 @@ formOptions|需要渲染的表单数组，详见`formOptions`|Array|[]
 -|-|-
 on-search|点击查询按钮时触发的方法|表单数据
 on-refresh|点击重置按钮时触发的方法|表单数据
+change-height|点击展开或关闭按钮时触发的方法|表单占用的高度
 
 ## formOptions
 每个对象为表单的各种属性。
@@ -31,6 +32,6 @@ on-refresh|点击重置按钮时触发的方法|表单数据
 属性|说明|类型|默认值
 -|-|-|-
 label|表单显示的文字|String|''
-type|表单的类型，`input`、`number`、`select`、`time`、`date`|String|''
+type|表单的类型，`input`、`number`、`select`、`time`、`date`、`radio`、`checkbox`、`cascader`|String|''
 key|表单数据中的key|String|''
 props|原始组件的相关属性，参考各个`element-ui`的相关组件|Object|{}
