@@ -16,8 +16,12 @@ tags:
 
 属性|说明|类型|默认值
 -|-|-|-
-formOptions|需要渲染的表单数组，详见`e-search`组件说明|Array|[]
+searchFormOptions|查询表单配置，详见`e-search`组件说明|Array|[]
+searchLabelWidth|查询表单label宽度，详见`e-search`组件说明|String|'80px'
+searchRefreshShow|查询区是否显示重置按钮，详见`e-search`组件说明|Boolean|true
 btns|需要渲染的按钮数组，详见`e-operation`组件说明|Array|[]
+searchShow|是否显示查询区|Boolean|true
+operationShow|是否显示操作区|Boolean|true
 
 ## events
 

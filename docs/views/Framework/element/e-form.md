@@ -17,6 +17,7 @@ tags:
 属性|说明|类型|默认值
 -|-|-|-
 formOptions|需要渲染的表单数组，详见`formOptions`|Array|[]
+formLabelWidth|表单整体的label宽度|String|'80px'
 formDataCurrent|需要绑定的表单数据|Object|{}
 
 ## formOptions

@@ -17,6 +17,8 @@ tags:
 属性|说明|类型|默认值
 -|-|-|-
 formOptions|需要渲染的表单数组，详见`formOptions`|Array|[]
+formLabelWidth|表单整体的label宽度|String|'80px'
+refreshShow|是否显示【重置】按钮|Boolean|true
 
 ## events
 

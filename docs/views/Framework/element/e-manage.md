@@ -18,7 +18,9 @@ tags:
 -|-|-|-
 searchShow|是否显示搜索区|Boolean|true
 operationShow|是否显示操作区|Boolean|true
-controlFormOptions|控制区需要渲染的查询表单数组，详见`e-search`组件的`formOptions`|Array|[]
+searchFormOptions|控制区的查询表单数组，详见`e-search`组件的`formOptions`|Array|[]
+searchLabelWidth|控制区的查询表单label宽度，详见`e-search`组件说明|String|'80px'
+searchRefreshShow|控制区的查询表单是否显示重置按钮，详见`e-search`组件说明|Boolean|true
 controlBtns|控制区需要渲染的操作按钮数组，详见`e-operation`组件的`btns`|Array|[]
 tableColumns|表格列配置，详见`e-table`组件的`columns`|Array|[]
 dialogFormOptions|编辑框需要渲染的表单数组，详见`e-form`组件的`formOptions`|Array|[]
