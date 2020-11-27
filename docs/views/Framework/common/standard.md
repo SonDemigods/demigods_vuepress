@@ -184,7 +184,7 @@ ID 和 class 的名称总是使用可以反应元素目的和用途的名称，�
   font-weight: 800;
 }
 
-.important {
+.primary {
   color: red;
 }
 ```
@@ -385,10 +385,10 @@ div{
 
 反例：`save / open / show / go`
 
-**** 特此说明，增删查改，详情统一使用如下 5 个单词，不得使用其他（目的是为了统一各个端）\****
+**** 特此说明，增、删、改、查和详情统一使用如下 5 个单词，不得使用其他（目的是为了统一各个端）\****
 
 ```
-add / update / delete / detail / get
+add / delete / update / get / detail
 ```
 
 **附： 函数方法常用的动词:**
@@ -519,11 +519,11 @@ let b = obj.b;
 let c = obj.c;
 ```
 
-#### 1.5.5 使用 ES6,7
+#### 1.5.5 使用 ES6、7、8
 
-必须优先使用 ES6,7 中新增的语法糖和函数。这将简化你的程序，并让你的代码更加灵活和可复用。
+优先使用 ES6、7、8 中新增的语法糖和函数。这将简化你的程序，并让你的代码更加灵活和可复用。
 
-> 必须强制使用 ES6, ES7 的新语法，比如箭头函数、await/async ， 解构， let ， for…of 等等
+> 必须强制使用 ES6,、ES7、ES8 的新语法，比如箭头函数、await/async ， 解构， let ， for…of 等等
 
 #### 1.5.6 函数的参数要有默认值
 
@@ -799,15 +799,20 @@ export default {
 </style>
 ```
 
-##### 9) 如果特性元素较多，应该主动换行。
+##### 9) 每一个特性元素独占一行。
 
 正例：
 
 ```vue
-<MyComponent foo="a" bar="b" baz="c"
-    foo="a" bar="b" baz="c"
-    foo="a" bar="b" baz="c"
- />
+<MyComponent foo="a" 
+             bar="b" 
+             baz="c"
+             foo="a" 
+             bar="b" 
+             baz="c"
+             foo="a" 
+             bar="b" 
+             baz="c"/>
 ```
 
 反例：
@@ -875,7 +880,7 @@ computed: {
 
 #### 2.1.4 标签顺序保持一致
 
-单文件组件应该总是让标签顺序保持为 `
+单文件组件应该总是让标签顺序保持为 `html`、`js`、`css`
 
 正例：
 
@@ -933,7 +938,7 @@ this.$router.push({ name: 'userCenter', query: { id: id } });
 
 path、childrenPoints 命名规范采用`kebab-case`命名规范（尽量vue文件的目录结构保持一致，因为目录、文件名都是`kebab-case`，这样很方便找到对应的文件）
 
-name 命名规范采用`KebabCase`命名规范且和component组件名保持一致！（因为要保持keep-alive特性，keep-alive按照component的name进行缓存，所以两者必须高度保持一致）
+name 命名规范采用`KebabCase`命名规范且和component组件名保持一致！（因为要保持keep-alive特性，keep-alive按照component的name进行缓存，所以两者必须高度一致）
 
 ```javascript
 // 动态加载
@@ -1022,7 +1027,7 @@ path除了采用`kebab-case`命名规范以外，必须以 / 开头，即使是c
 
 vue 项目中的所有命名一定要与后端命名统一。
 
-比如权限：后端 privilege, 前端无论 router , store, api 等都必须使用 privielege 单词！
+比如权限：后端 privilege, 前端无论 router , store, api 等都必须使用 privilege 单词！
 
 #### 2.2.2 使用 Vue-cli 脚手架
 
