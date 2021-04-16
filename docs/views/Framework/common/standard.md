@@ -1214,7 +1214,7 @@ data
 computed
 created
 mounted
-metods
+methods
 filter
 watch
 ```
