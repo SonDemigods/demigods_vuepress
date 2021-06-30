@@ -20,7 +20,7 @@ npm install vue-router
 
 ### 创建router文件
 
-store文件即vuex管理数据的配置文件，其中包括`seate`存储的数据、`getters`计算状态，类似于vue中的计算属性、`mutations`同步修改数据、`action`异步修改数据。
+router.js文件即路由的配置文件，以数组的形式存储路由信息，其标准格式如下。
 
 ```javascript
 import Vue from 'vue'
