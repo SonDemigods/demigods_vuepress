@@ -35,6 +35,9 @@ module.exports = {
         'items': [{
           'text': 'Vue',
           'link': '/categories/vue教程/'
+        },{
+          'text': 'React',
+          'link': '/categories/React教程/'
         }]
       },
       {
