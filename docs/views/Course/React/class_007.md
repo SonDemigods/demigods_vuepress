@@ -150,10 +150,11 @@ import List from './list';
 const BasicRoute = () => (
     <HashRouter>
         <Switch>
-            <Route exact path="/" component={() => {
+            <Route path="/" component={() => {
                 return (
                   <Layout>
-                    <Route exact path="/" component={App} />
+                    <Route path="/" component={App} />
+                    <Route path="/index/abc" component={App} />
                   </Layout>
                 )
               }}
