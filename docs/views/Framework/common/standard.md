@@ -563,7 +563,7 @@ if (condition) doSomething();
 
 #### 1.5.8 undefined 判断
 
-永远不要直接使用 undefined 进行变量判断；使用 typeof 和字符串’undefined’对变量进行判断。
+永远不要直接使用 `undefined` 进行变量判断；使用 `typeof` 和字符串 'undefined' 对变量进行判断。
 
 正例：
 
@@ -587,11 +587,11 @@ if (person === undefined) {
 
 #### 1.5.10 this 的转换命名
 
-对上下文 this 的引用只能使用`self`来命名
+对上下文 `this` 的引用只能使用`self`来命名
 
 #### 1.5.11 慎用 console.log
 
-因 console.log 大量使用会有性能问题，所以在非 webpack 项目中谨慎使用 log 功能
+因 `console.log` 大量使用会有性能问题，所以在非 webpack 项目中谨慎使用 `log` 功能
 
 #### 1.5.12 模块导出
 
@@ -602,7 +602,7 @@ if (person === undefined) {
 
 ### (一) Vue 编码基础
 
-vue 项目规范以 Vue 官方规范 （https://cn.vuejs.org/v2/style-guide/） 中的 A 规范为基础，在其上面进行项目开发，故所有代码均遵守该规范。
+vue 项目规范以 [Vue 官方规范](https://cn.vuejs.org/v2/style-guide/) 中的 A 规范为基础，在其上面进行项目开发，故所有代码均遵守该规范。
 
 > 请仔仔细细阅读 Vue 官方规范，切记，此为第一步。
 
@@ -707,7 +707,8 @@ components/
 反例：
 
 ```vue
-<my-component /> <row><table :column="data"/></row>
+<my-component />
+<row><table :column="data"/></row>
 ```
 
 ##### 6) 组件的 data 必须是一个函数
@@ -900,6 +901,17 @@ computed: {
 
 #### 2.1.5 必须为 v-for 设置键值 key
 
+```vue
+<template>
+  <div>
+    <p v-for="(item, index) in list" 
+       :key="item.id">
+      {{item.name}}
+    </p>
+  </div>
+</template>
+```
+
 #### 2.1.6 v-show 与 v-if 选择
 
 如果运行时，需要非常频繁地切换，使用 v-show ；如果在运行时，条件很少改变，使用 v-if。
@@ -916,7 +928,7 @@ components > props > data > computed > watch > filter > 钩子函数（钩子函
 
 正例：
 
-```
+```javascript
 let id = ' 123';
 this.$router.push({ name: 'userCenter', query: { id: id } });
 ```
@@ -1261,7 +1273,8 @@ v-text
 整理必须加注释的地方
 
 - 公共组件使用说明
-- api 目录的接口 js 文件必须加注释
+- api 目录的接口 
+- js 文件必须加注释
 - store 中的 state, mutation, action 等必须加注释
 - vue 文件中的 template 必须加注释，若文件较大添加 start end 注释
 - vue 文件的 methods，每个 method 必须添加注释
@@ -1315,6 +1328,613 @@ const name = 'abc'
 ##### 1) 尽量不要手动操作 DOM
 
 因使用 vue 框架，所以在项目开发中尽量使用 vue 的数据驱动更新 DOM，尽量（不到万不得已）不要手动操作 DOM，包括：增删改 dom 元素、以及更改样式、添加事件等。
+
+##### 2) 删除无用代码
+
+因使用了 git/svn 等代码版本工具，对于无用代码必须及时删除，例如：一些调试的 console 语句、无用的弃用功能代码。
+
+## 三、React 项目规范
+
+### (一) React 编码基础
+
+React 项目规范以 [React 官方](https://react.docschina.org/learn/thinking-in-react) 的规范为基础，在其上面进行项目开发，故所有代码均遵守该规范。
+
+> 请仔仔细细阅读 React 官方规范，切记，此为第一步。
+
+#### 3.1.1. 组件规范
+
+##### 1) 组件名为多个单词。
+
+组件名应该始终是多个单词组成（大于等于 2），且命名规范为`KebabCase`格式。
+这样做可以避免跟现有的以及未来的 HTML 元素相冲突，因为所有的 HTML 元素名称都是单个单词的。
+
+正例：
+
+```jsx
+class TodoItem extends Component {
+  constructor(props) {
+    super(props)
+  }
+  render () {
+    return (
+      <div></div>
+    );
+  }
+};
+```
+
+反例：
+
+```jsx
+class Todo extends Component {
+  constructor(props) {
+    super(props)
+  }
+  render () {
+    return (
+      <div></div>
+    );
+  }
+};
+class todo-item extends Component {
+  constructor(props) {
+    super(props)
+  }
+  render () {
+    return (
+      <div></div>
+    );
+  }
+};
+```
+
+##### 2) 组件文件名为 pascal-case 格式
+
+正例：
+
+```sh
+components/
+|- myComponent
+|-- index.js
+```
+
+反例：
+
+```sh
+components/
+|- my-component
+|-- index.js
+|- MyComponent
+|-- index.js
+```
+
+##### 3) 基础组件文件名为 base 开头，使用完整单词而不是缩写。
+
+正例：
+
+```sh
+components/
+|- baseButton
+|-- index.js
+|- baseTable
+|-- index.js
+|- baseIcon
+|-- index.js
+```
+
+反例：
+
+```sh
+components/
+|- MyButton
+|-- index.js
+|- react-table
+|-- index.js
+|- Icon
+|-- index.js
+```
+
+##### 4) 和父组件紧密耦合的子组件应该以父组件名作为前缀命名
+
+正例：
+
+```sh
+components/
+|- todoList
+|-- index.js
+|- todoListItem
+|-- index.js
+|- todoListItemButton
+|-- index.js
+|- userProfileOptions （完整单词）
+|-- index.js
+```
+
+反例：
+
+```sh
+components/
+|- TodoList
+|-- index.js
+|- TodoItem
+|-- index.js
+|- todo-button
+|-- index.js
+|- UProfOpts （使用了缩写）
+|-- index.js
+```
+
+##### 5) 在 render 中使用组件，应使用 PascalCase 模式，并且使用自闭合组件。
+
+正例：
+
+```jsx
+<!-- 在单文件组件、字符串模板和 JSX 中 -->
+<BaseButton />
+<Row><Table column={data}/></Row>
+```
+
+反例：
+
+```jsx
+<my-component />
+<row><table column={data}/></row>
+```
+
+##### 6) state 中的数据必须初始化
+
+ state 中的数据需要初始化，防止出现 undefined 或 null
+
+正例：
+
+```jsx
+class UserName extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: 'jack'
+    }
+  }
+  render () {
+    return (
+      <div>{this.state.name}</div>
+    );
+  }
+};
+```
+
+反例：
+
+```jsx
+class UserName extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+  render () {
+    return (
+      <div>{this.state.name}</div>
+    );
+  }
+};
+```
+
+##### 7) Prop 定义应该尽量详细
+
+- 必须使用 camelCase 驼峰命名
+- 必须指定类型
+- 必须加上注释，表明其含义
+
+正例：
+
+```jsx
+UserName.propTypes = {
+  // 显示类型
+  type: PropTypes.string,
+  // 组件样式
+  className: PropTypes.string,
+  // 点击事件
+  onClick: PropTypes.func
+};
+```
+
+##### 8) 组件样式单独文件
+
+正例：
+
+```sh
+UserName/
+|- index.js
+|- index.less
+```
+
+##### 9) 每一个特性元素独占一行。
+
+正例：
+
+```jsx
+<MyComponent foo={a} 
+             bar={b} 
+             baz={c}
+             foo={a} 
+             bar={b} 
+             baz={c}
+             foo={a} 
+             bar={b} 
+             baz={c}/>
+```
+
+反例：
+
+```jsx
+<MyComponent foo={a} bar={b} baz={c} foo={a} bar={b} baz={c} foo={a} bar={b} baz={c}/>
+```
+
+#### 3.1.2 在 JSX 中通过大括号使用 JavaScript
+
+```jsx
+class UserName extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: 'jack'
+    }
+  }
+
+  render () {
+    return (
+      <div>{this.state.name}</div>
+    );
+  }
+};
+```
+
+#### 3.1.3. 模板中使用简单的表达式
+
+组件模板应该只包含简单的表达式，复杂的表达式则应该重构为方法。复杂表达式会让你的模板变得不那么声明式。我们应该尽量描述应该出现的是什么，而非如何计算那个值。而且方法使得代码可以重用。
+
+正例：
+
+```jsx
+class UserName extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: 'jack'
+    }
+  }
+
+  calcName = (data = '') => {
+    return data[0].toUpperCase() + data.slice(1);
+  }
+
+  render () {
+    return (
+      <div>{this.calcName(this.state.name)}</div>
+    );
+  }
+};
+```
+
+反例：
+
+```jsx
+class UserName extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: 'jack'
+    }
+  }
+
+  render () {
+    return (
+      <div>{this.state.name[0].toUpperCase() + this.state.name.slice(1)}</div>
+    );
+  }
+};
+```
+
+#### 3.1.4 属性顺序保持一致
+
+组件应该总是让属性顺序保持为 `constructor`、`method`、`render`
+
+正例：
+
+```jsx
+class UserName extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: 'jack'
+    }
+  }
+
+  calcName = (data = '') => {
+    return data;
+  }
+
+  render () {
+    return (
+      <div>{this.calcName(this.state.name)}</div>
+    );
+  }
+};
+```
+
+反例：
+
+```jsx
+class UserName extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: 'jack'
+    }
+  }
+
+  render () {
+    return (
+      <div>{this.calcName(this.state.name)}</div>
+    );
+  }
+
+  calcName = (data = '') => {
+    return data;
+  }
+};
+```
+
+#### 3.1.5 必须为 循环 设置键值 key
+
+```jsx
+class UserName extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      list: [{
+        name: 'jack',
+        id: 1
+      }]
+    }
+  }
+
+  render () {
+    return (
+      <div>
+        {
+          this.state.list.map(item => {
+            return <div key={item.id}>{item.name}</div> 
+          })
+        }
+      </div>
+    );
+  }
+};
+```
+
+### (二) React 项目目录规范
+
+#### 3.2.1 基础
+
+React 项目中的所有命名一定要与后端命名统一。
+
+比如权限：后端 privilege, 前端无论 router , api 等都必须使用 privilege 单词！
+
+#### 3.2.2 使用 React 或 Next.js 的脚手架
+
+使用 React 或 Next.js 的脚手架来初始化项目，项目名按照上面的命名规范。
+
+#### 3.2.3 目录说明
+
+目录名按照上面的命名规范，其中 components 组件用大写驼峰，其余除 components 组件目录外的所有目录均使用 kebab-case 命名。
+
+
+##### 1) api 目录
+
+- 文件、变量命名要与后端保持一致。
+- 此目录对应后端 API 接口，按照后端一个 controller 一个 api js 文件。若项目较大时，可以按照业务划分子目录，并与后端保持一致。
+- api 中的方法名字要与后端 api url 尽量保持语义高度一致性。
+- 对于 api 中的每个方法要添加注释，注释与后端 swagger 文档保持一致。
+
+正例：
+
+后端 url： EmployeeController.java
+
+```sh
+/employee/add
+/employee/delete/{id}
+/employee/update
+```
+
+前端： employee.js
+
+```javascript
+const api = {
+	employeeAdd: '/employee/add', // 新增员工
+	employeeDelete: '/employee/delete', // 删除员工信息
+	employeeUpdate: '/employee/update', // 更新员工信息
+}
+```
+
+##### 2) assets 目录
+
+assets 为静态资源，里面存放 images, styles, icons 等静态资源，静态资源命名格式为 kebab-case
+
+```sh
+|assets
+|-- icons
+|-- images
+|   |-- backgroundColor.png
+|   |-- uploadHeader.png
+|-- styles
+|-- theme
+```
+
+##### 3) components 目录
+
+此目录应按照组件进行目录划分，目录命名为 KebabCase，组件命名规则也为 KebabCase
+
+```sh
+|components
+|-- errorLog
+|   |-- index.js
+|   |-- index.less
+|-- markdownEditor
+|   |-- index.js
+|-- kebabCase
+```
+
+##### 4) constants 目录
+
+此目录存放项目所有常量
+
+目录结构：
+
+```
+|constants
+|-- index.js
+|-- role.js
+|-- employee.js
+```
+
+例子： employee.js
+
+```javascript
+export const EMPLOYEE_STATUS = {
+  NORMAL: {
+    value: 1,
+    desc: '正常'
+  },
+  DISABLED: {
+    value: 1,
+    desc: '禁用'
+  },
+  DELETED: {
+    value: 2,
+    desc: '已删除'
+  }
+};
+
+export const EMPLOYEE_ACCOUNT_TYPE = {
+  QQ: {
+    value: 1,
+    desc: 'QQ登录'
+  },
+  WECHAT: {
+    value: 2,
+    desc: '微信登录'
+  },
+  DINGDING: {
+    value: 3,
+    desc: '钉钉登录'
+  },
+  USERNAME: {
+    value: 4,
+    desc: '用户名密码登录'
+  }
+};
+
+export default {
+  EMPLOYEE_STATUS,
+  EMPLOYEE_ACCOUNT_TYPE
+};
+```
+
+##### 5) routes 目录
+
+- 命名要与后端、router、api 等保持一致
+- components 中组件要使用 PascalCase 规则
+
+```sh
+|-- routes                            路由目录
+|   |-- role                          role模块名
+|   |   |-- index.js                  role更新页面
+|   |   |-- index.less                role模块样式
+|   |   |-- components                role模块通用组件文件夹
+|   |   |   |-- roleHeader            role头部组件
+|   |   |   |   |-- index.js
+|   |   |   |   |-- index.less
+```
+
+#### 3.2.4 js/jsx文件规范
+
+##### 1) 基本规范
+* 必须有类名且与组件名相同
+* 必须有 `constructor` 方法
+* 必须初始化 `state` 中的数据
+* 必须有 `render` 方法，纯方法组件除外
+
+
+##### 2) 属性结构规范
+
+* 每个属性单独占用一行
+
+```jsx
+<MyComponent a={a}
+              b={b}
+              c={c}><MyComponent>
+```
+
+#### 3.2.5 注释说明
+
+整理必须加注释的地方
+
+- 公共组件使用说明
+- api 目录的接口 
+- js 文件必须加注释
+- js/jsx 文件 class 中的 render 必须加注释，若文件较大添加 start end 注释
+- js/jsx 文件 class 的 methods，每个 method 必须添加注释
+- js/jsx 文件 class 的 state, 非常见单词要加注释
+
+##### 1) 单行注释
+
+```javascript
+// 名称
+const name = 'abc'
+```
+
+##### 2) 多行注释
+
+```javascript
+/**
+ * @functionName localSave
+ * @param {String} key 数据的key
+ * @param {String} value 数据的value
+ * @description 在localStorage存储数据
+ * @author 张航
+ * @date 2020-03-18 12:21:36
+ * @version V1.0.0
+ */
+ 
+ /**
+ * @functionName localRead
+ * @param {String} key 获取数据的key
+ * @return {String} 返回查询结果，未找到时返回结果为''（空字符串）
+ * @description 根据key获取localStorage的数据
+ * @author 张航
+ * @date 2020-03-18 12:23:56
+ * @version V1.0.0
+ */
+```
+##### 3) 组件注释
+```javascript
+/**
+ * @componentName demo
+ * @props {*|String|Number|Boolean|Array|Object} 参数
+ * @event {Function} 事件
+ * @description 组件描述
+ * @author 张航
+ * @date 2020-03-18 11:25:29
+ * @version V1.0.0
+ */
+```
+
+#### 3.2.6 其他
+
+##### 1) 尽量不要手动操作 DOM
+
+因使用 React 框架，所以在项目开发中尽量使用 React 的数据驱动更新 DOM，尽量（不到万不得已）不要手动操作 DOM，包括：增删改 dom 元素、以及更改样式、添加事件等。
 
 ##### 2) 删除无用代码
 
